@@ -34,12 +34,14 @@ body{
     font-weight: 400;
     color: #222;
     word-break: keep-all;
-    background-color: rgb(10, 58, 58);
+    /* background-color: rgb(10, 58, 58); */
     height: 2000px;
 }
+/* 공통영역 */
 .inner {
   display: block;
   width: 100%;
   max-width: 1420px;
   margin: 0 auto;
+/* background-color: burlywood; */
 }
