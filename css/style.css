@@ -4,6 +4,8 @@
 @import url("visual.css");
 @import url("service.css");
 @import url("about.css");
+@import url("business.css");
+@import url("footer.css");
 * {
   margin: 0;
   padding: 0;
@@ -18,24 +20,22 @@ img {
   vertical-align: middle;
   border: 0;
 }
-html{
- 
-    /* rem적용 */
-    font-size: 10px;
+html {
+  /* rem적용 */
+  font-size: 10px;
 }
-html.active{
+html.active {
   overflow: hidden;
 }
-body{
-    font-family: "Pretendard", sans-serif;
-    font-size: 16px;
-    line-height: 1;
-    letter-spacing: 0;
-    font-weight: 400;
-    color: #222;
-    word-break: keep-all;
-    /* background-color: rgb(10, 58, 58); */
-    height: 2000px;
+body {
+  font-family: "Pretendard", sans-serif;
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: 0;
+  font-weight: 400;
+  color: #222;
+  word-break: keep-all;
+  height: 2000px;
 }
 /* 공통영역 */
 .inner {
@@ -43,5 +43,29 @@ body{
   width: 100%;
   max-width: 1420px;
   margin: 0 auto;
-/* background-color: burlywood; */
+}
+/* gotop */
+.gotop {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 9999;
+  width: 60px;
+  height: 60px;
+  background-color: #3056a1;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 28px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s;
+}
+.gotop.active {
+  visibility: visible;
+  opacity: 1;
+}
+.gotop.active-footer {
+  bottom: 320px;
 }

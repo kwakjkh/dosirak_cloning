@@ -11,4 +11,10 @@ window.addEventListener("load", function () {
       },
     },
   });
+  // business-modal기능
+  const businessModal = this.document.querySelector(".business-modal")
+  businessModal.addEventListener("click",function(){
+    businessModal.style.display = "none"
+  })
+  
 });
